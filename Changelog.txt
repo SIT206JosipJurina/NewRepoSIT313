@@ -1,6 +1,6 @@
 SIT313 Assignment 1
 
-Quize Social Media Logo 
+Quiz Social Media Logo 
 
 Here is where a weekly Changelog will be for my app.
 
