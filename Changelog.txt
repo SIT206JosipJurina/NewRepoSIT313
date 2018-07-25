@@ -1,0 +1,27 @@
+SIT313 Assignment 1
+
+Quize Social Media Logo 
+
+Here is where a weekly Changelog will be for my app.
+
+
+-Week 1
+
+-Gather ideas for an app.
+-Brainstorm those ideas further.
+-Decide wether to create the app in Ios or Android.
+-create github for the app
+
+
+
+-Week 2
+
+-add project to the git hub
+-Gather images for app
+-Begin working on the app
+
+
+-Week 3
+
+Begin working on the code/UI
+
