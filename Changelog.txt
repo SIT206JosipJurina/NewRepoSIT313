@@ -13,7 +13,6 @@ Here is where a weekly Changelog will be for my app.
 -create github for the app
 
 
-
 -Week 2
 
 -add project to the git hub
@@ -23,5 +22,7 @@ Here is where a weekly Changelog will be for my app.
 
 -Week 3
 
-Begin working on the code/UI
-
+-Begin working on the code/UI
+-Created Common folder which contains Common class, The class contains entire alphabet inside an array
+-Created Adapter folder which has two gridview classes, which will link with the two gridviews created in the xml.
+-Started working in the Main Activity to put everyting together.
