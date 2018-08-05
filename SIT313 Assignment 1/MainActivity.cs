@@ -103,7 +103,7 @@ namespace SIT313_Assignment_1
             //string to char array
             answer = correct_answer.ToCharArray();
 
-            //add Answer character to List
+            //Add Answer character to List
             suggestSource.Clear();
             foreach (char item in answer) { 
             
