@@ -26,10 +26,6 @@ namespace SIT313_Assignment_1.Adapter
             this.context = context;
             this.mainActivity = mainActivity;
         }
-
-
-
-
         public override int Count
         {
             get { return suggestSource.Count; }
@@ -62,7 +58,7 @@ namespace SIT313_Assignment_1.Adapter
                 }
                 else
                 {
-                    button = (Button)convertView;
+                    button = new Button(context);
                     button.LayoutParameters = new GridView.LayoutParams(85, 85);
                     button.SetPadding(8, 8, 8, 8);
                     button.SetBackgroundColor(Color.DarkGray);
@@ -70,7 +66,46 @@ namespace SIT313_Assignment_1.Adapter
                     button.Text = suggestSource[position];
                     button.Click += delegate
                     {
-                    //Add code for the button event here <<<
+                        //here is when the user clicks on char
+                        //convert char array to string
+                        string answer = new string(mainActivity.answer);
+                        if (answer.Contains(suggestSource[position]))
+                        {
+                            char compare = suggestSource[position][0]; // this gets char from string
+                            for(int i=0; i<answer.Length; i++)
+                            {
+                                if(compare == answer[i])
+                                {
+                                    Common.Common.user_submit_answer[i] = compare;
+                                }
+                            } 
+
+                           /* for(int i = Common.Common.user_submit_answer.Count(char.IsLetter); i < answer.Length; i++)
+                            {
+                                if (compare == answer[i])
+                                {
+                                    Common.Common.user_submit_answer[i] = compare;
+                                }
+                            }*/
+                            //update UI
+                            GridViewAnswerAdapter answerAdapter = new GridViewAnswerAdapter(Common.Common.user_submit_answer, context);
+                            mainActivity.gvAnswer.Adapter = answerAdapter;
+                            answerAdapter.NotifyDataSetChanged();
+
+                            //Remove characters from suggest source
+                            mainActivity.suggestSource[position] = "null";
+                            mainActivity.suggestAdapter = new GridViewSuggestAdapter(mainActivity.suggestSource, context, mainActivity);
+                            mainActivity.gvSuggest.Adapter = mainActivity.suggestAdapter;
+                            mainActivity.suggestAdapter.NotifyDataSetChanged();
+                        }
+                        else
+                        {
+                            //Remove characters from suggest source
+                            mainActivity.suggestSource[position] = "null";
+                            mainActivity.suggestAdapter = new GridViewSuggestAdapter(mainActivity.suggestSource, context, mainActivity);
+                            mainActivity.gvSuggest.Adapter = mainActivity.suggestAdapter;
+                            mainActivity.suggestAdapter.NotifyDataSetChanged();
+                        }
                 };
 
                 }

@@ -28,7 +28,9 @@ namespace SIT313_Assignment_1.Adapter
 
         public override int Count
         {
-            get { return answerCharacters.Length; }
+            get {
+                return answerCharacters.Length;
+            }
         }
 
         public override Java.Lang.Object GetItem(int position)

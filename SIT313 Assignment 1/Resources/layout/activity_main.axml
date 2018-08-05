@@ -7,7 +7,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_alignParentTop="true"
-        android:gravity="center_horrizontal"
+        android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
@@ -23,7 +23,7 @@
             android:horizontalSpacing="4dp"
             android:verticalSpacing="4dp"
             android:columnWidth="40dp"
-            android:numColumns="auto_fill"
+            android:numColumns="auto_fit"
             android:scrollbars="none"
             android:stretchMode="columnWidth" />
         <GridView
@@ -35,7 +35,7 @@
             android:horizontalSpacing="4dp"
             android:verticalSpacing="4dp"
             android:columnWidth="40dp"
-            android:numColumns="auto_fill"
+            android:numColumns="auto_fit"
             android:scrollbars="none"
             android:stretchMode="columnWidth" />
     </LinearLayout>
