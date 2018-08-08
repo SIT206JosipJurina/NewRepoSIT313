@@ -78,13 +78,7 @@ namespace SIT313_Assignment_1.Adapter
                                 }
                             } 
 
-                           /* for(int i = Common.Common.user_submit_answer.Count(char.IsLetter); i < answer.Length; i++)
-                            {
-                                if (compare == answer[i])
-                                {
-                                    Common.Common.user_submit_answer[i] = compare;
-                                }
-                            }*/
+                           
                             //update UI
                             GridViewAnswerAdapter answerAdapter = new GridViewAnswerAdapter(Common.Common.user_submit_answer, context);
                             mainActivity.gvAnswer.Adapter = answerAdapter;
