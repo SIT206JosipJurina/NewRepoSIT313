@@ -26,3 +26,13 @@ Here is where a weekly Changelog will be for my app.
 -Created Common folder which contains Common class, The class contains entire alphabet inside an array
 -Created Adapter folder which has two gridview classes, which will link with the two gridviews created in the xml.
 -Started working in the Main Activity to put everyting together.
+
+-Week 4
+-finish working on main activity
+-the submit button working
+-added splash screen
+-fixing many bugs
+-images, gridviews loading
+-currently fixing bugs
+
+
