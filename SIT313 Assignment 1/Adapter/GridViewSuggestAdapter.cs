@@ -45,9 +45,7 @@ namespace SIT313_Assignment_1.Adapter
         {
             Button button;
             if (convertView == null)
-            {
-
-                
+            {            
                 if (suggestSource[position].Equals("null"))
                 {
                     button = new Button(context);

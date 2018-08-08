@@ -32,9 +32,9 @@ namespace SIT313_Assignment_1
         public char[] answer;
         string correct_answer;
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);        
+            base.OnCreate(bundle);        
             SetContentView(Resource.Layout.activity_main);
 
             InitViews();
@@ -64,11 +64,11 @@ namespace SIT313_Assignment_1
                     Common.Common.user_submit_answer = new char[correct_answer.Length];
 
                     //Update UI
-                    GridViewAnswerAdapter answerAdapeter = new GridViewAnswerAdapter(SetupNullList(), this);
+                    GridViewAnswerAdapter answerAdapter = new GridViewAnswerAdapter(SetupNullList(), this);
                     gvAnswer.Adapter = answerAdapter;
                     answerAdapter.NotifyDataSetChanged();
 
-                    GridViewSuggestAdapter suggestAdapeter = new GridViewSuggestAdapter(suggestSource, this, this);
+                    GridViewSuggestAdapter suggestAdapter = new GridViewSuggestAdapter(suggestSource, this, this);
                     gvSuggest.Adapter = suggestAdapter;
                     suggestAdapter.NotifyDataSetChanged();
 
@@ -102,6 +102,8 @@ namespace SIT313_Assignment_1
 
             //string to char array
             answer = correct_answer.ToCharArray();
+
+            Common.Common.user_submit_answer = new char[answer.Length];
 
             //Add Answer character to List
             suggestSource.Clear();
