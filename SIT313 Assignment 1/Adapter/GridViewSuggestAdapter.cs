@@ -69,7 +69,7 @@ namespace SIT313_Assignment_1.Adapter
                         string answer = new string(mainActivity.answer);
                         if (answer.Contains(suggestSource[position]))
                         {
-                            char compare = suggestSource[position][0]; // this gets char from string
+                            char compare = suggestSource[position][0]; //this gets char from string
                             for(int i=0; i<answer.Length; i++)
                             {
                                 if(compare == answer[i])
