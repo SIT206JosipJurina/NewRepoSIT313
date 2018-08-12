@@ -12,6 +12,11 @@ namespace SIT313_Assignment_1
     [Activity(Label = "Josip'sLogoQuiz", MainLauncher = false, Icon = "@drawable/icon", Theme ="@style/Theme.AppCompat.Light.NoActionBar")]
     public class MainActivity : AppCompatActivity
     {
+        /*Josip Antony Jurina
+         *Student ID: 216164785
+         *SIT313 Assignment 1
+         * 
+         */
 
         public List<string> suggestSource = new List<string>();
         public GridViewAnswerAdapter answerAdapter;
@@ -19,7 +24,7 @@ namespace SIT313_Assignment_1
 
         public Button btnSubmit;
         public GridView gvAnswer, gvSuggest;
-
+        public TextView tx;
         public ImageView imgLogo;
 
         int[] image_list =
@@ -73,11 +78,12 @@ namespace SIT313_Assignment_1
                     suggestAdapter.NotifyDataSetChanged();
 
                     SetupList();
-
+                   
                 }
                 else { 
                 
                     Toast.MakeText(this, "Incorrect!!!", ToastLength.Short).Show();
+                    StartActivity(typeof(End));
                 }
                 
             };

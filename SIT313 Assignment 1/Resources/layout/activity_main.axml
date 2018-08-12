@@ -38,6 +38,11 @@
             android:numColumns="auto_fit"
             android:scrollbars="none"
             android:stretchMode="columnWidth" />
+        <TextView
+            android:id="@+id/txtcount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp" />
     </LinearLayout>
     <Button
         android:id="@+id/btnSubmit"

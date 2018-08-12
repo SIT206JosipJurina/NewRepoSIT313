@@ -18,8 +18,9 @@ namespace SIT313_Assignment_1
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            
 
-            StartActivity(typeof(MainActivity));
+            StartActivity(typeof(MainMenu));
 
             // Create your application here
         }
