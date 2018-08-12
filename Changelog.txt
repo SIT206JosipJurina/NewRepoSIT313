@@ -35,7 +35,9 @@ Here is where a weekly Changelog will be for my app.
 
 -Week 5 
 -created Main menu screen with two new buttons play and exit
+-created .axml page for Main menu
 -created a end game screen with a retry button
+-created .axml page for end game.
 -fix all current errors 
 -app tested on android
 
