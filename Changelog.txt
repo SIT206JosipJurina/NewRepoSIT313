@@ -12,13 +12,11 @@ Here is where a weekly Changelog will be for my app.
 -Decide wether to create the app in Ios or Android.
 -create github for the app
 
-
 -Week 2
 
 -add project to the git hub
 -Gather images for app
 -Begin working on the app
-
 
 -Week 3
 
@@ -34,5 +32,12 @@ Here is where a weekly Changelog will be for my app.
 -fixing many bugs
 -images, gridviews loading
 -currently fixing bugs
+
+-Week 5 
+-created Main menu screen with two new buttons play and exit
+-created a end game screen with a retry button
+-fix all current errors 
+-app tested on android
+
 
 
